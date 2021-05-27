@@ -15,6 +15,12 @@
 		543B2A7B2660012000DCFC3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543B2A792660012000DCFC3D /* LaunchScreen.storyboard */; };
 		543B2A862660012000DCFC3D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2A852660012000DCFC3D /* WeatherTests.swift */; };
 		543B2A912660012000DCFC3D /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2A902660012000DCFC3D /* WeatherUITests.swift */; };
+		543B2AA22660039900DCFC3D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2AA02660039900DCFC3D /* WeatherTableViewCell.swift */; };
+		543B2AA32660039900DCFC3D /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543B2AA12660039900DCFC3D /* WeatherTableViewCell.xib */; };
+		543B2AA6266003A400DCFC3D /* HourlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2AA4266003A400DCFC3D /* HourlyTableViewCell.swift */; };
+		543B2AA7266003A400DCFC3D /* HourlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543B2AA5266003A400DCFC3D /* HourlyTableViewCell.xib */; };
+		543B2AAD2660219200DCFC3D /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B2AAB2660219200DCFC3D /* WeatherCollectionViewCell.swift */; };
+		543B2AAE2660219200DCFC3D /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 543B2AAC2660219200DCFC3D /* WeatherCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		543B2A8C2660012000DCFC3D /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		543B2A902660012000DCFC3D /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		543B2A922660012000DCFC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543B2AA02660039900DCFC3D /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		543B2AA12660039900DCFC3D /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		543B2AA4266003A400DCFC3D /* HourlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyTableViewCell.swift; sourceTree = "<group>"; };
+		543B2AA5266003A400DCFC3D /* HourlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyTableViewCell.xib; sourceTree = "<group>"; };
+		543B2AAB2660219200DCFC3D /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		543B2AAC2660219200DCFC3D /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		543B2A6D2660011D00DCFC3D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				543B2AA82660215F00DCFC3D /* ColletionViewCell */,
+				543B2A9F2660036100DCFC3D /* HourlyCollectionCell */,
+				543B2A9E2660035700DCFC3D /* WeatherCell */,
 				543B2A6E2660011D00DCFC3D /* AppDelegate.swift */,
 				543B2A702660011D00DCFC3D /* SceneDelegate.swift */,
 				543B2A722660011E00DCFC3D /* ViewController.swift */,
@@ -126,6 +141,33 @@
 				543B2A922660012000DCFC3D /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		543B2A9E2660035700DCFC3D /* WeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				543B2AA02660039900DCFC3D /* WeatherTableViewCell.swift */,
+				543B2AA12660039900DCFC3D /* WeatherTableViewCell.xib */,
+			);
+			path = WeatherCell;
+			sourceTree = "<group>";
+		};
+		543B2A9F2660036100DCFC3D /* HourlyCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				543B2AA4266003A400DCFC3D /* HourlyTableViewCell.swift */,
+				543B2AA5266003A400DCFC3D /* HourlyTableViewCell.xib */,
+			);
+			path = HourlyCollectionCell;
+			sourceTree = "<group>";
+		};
+		543B2AA82660215F00DCFC3D /* ColletionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				543B2AAB2660219200DCFC3D /* WeatherCollectionViewCell.swift */,
+				543B2AAC2660219200DCFC3D /* WeatherCollectionViewCell.xib */,
+			);
+			path = ColletionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543B2AA32660039900DCFC3D /* WeatherTableViewCell.xib in Resources */,
+				543B2AA7266003A400DCFC3D /* HourlyTableViewCell.xib in Resources */,
 				543B2A7B2660012000DCFC3D /* LaunchScreen.storyboard in Resources */,
 				543B2A782660012000DCFC3D /* Assets.xcassets in Resources */,
 				543B2A762660011E00DCFC3D /* Main.storyboard in Resources */,
+				543B2AAE2660219200DCFC3D /* WeatherCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543B2AA22660039900DCFC3D /* WeatherTableViewCell.swift in Sources */,
 				543B2A732660011E00DCFC3D /* ViewController.swift in Sources */,
+				543B2AA6266003A400DCFC3D /* HourlyTableViewCell.swift in Sources */,
+				543B2AAD2660219200DCFC3D /* WeatherCollectionViewCell.swift in Sources */,
 				543B2A6F2660011D00DCFC3D /* AppDelegate.swift in Sources */,
 				543B2A712660011D00DCFC3D /* SceneDelegate.swift in Sources */,
 			);
@@ -439,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FJY8HFAA5;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FJY8HFAA5;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
